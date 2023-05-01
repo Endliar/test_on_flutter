@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,6 +10,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Container(
+        padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+        child: Column(
+          children: [
+            Text("Hello, world"),
+            SizedBox(
+              height: 15,
+            ),
+            Row(
+              children: [Text("Снова изменил текст типа")],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
