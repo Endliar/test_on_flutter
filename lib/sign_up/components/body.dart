@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/resources/size_config.dart';
+// import 'package:test/resources/size_config.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -9,10 +9,12 @@ class Body extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          Text("Добро пожаловать",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: getProportionateScreenWidth(20))),
+          Text(
+            "Добро пожаловать",
+            style: TextStyle(
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
     );
